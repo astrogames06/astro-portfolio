@@ -5,41 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astro</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <img src="corner-img.png" alt="corner-img" id="corner-img">
+    <a href="index.html">
+        <img src="corner-img.png" alt="corner-img" id="corner-img">
+    </a>
     <div id="main-contents">
-        <p id="im-w">I'm <span id="astro-w">Astro</span></p>
-        <p class="plain-text" id="intro">I program websites, games, apps, robotics, and everything in between.</p>
+        <p id="im-w" data-aos="fade-right">I'm <span id="astro-w">Astro</span></p>
+        <p class="plain-text" id="intro" data-aos="fade-right">I program websites, games, apps, robotics, and everything in between.</p>
         <br>
-        <p class="title" id="lt">Languages:</p>
+        <p class="title" id="lt" data-aos="fade-right">Languages:</p>
         <br>
         <ul id="langs">
-            <li><img src="cpp.png" alt="c++"></li>
-            <li><img src="cs.png" alt="c#"></li>
-            <li><img src="py.png" alt="python"></li>
-            <li><img src="js.png" alt="javascript" class="js"></li>
-            <li><img src="lua.png" alt="lua"></li>
-            <li><img src="html.png" alt="html"></li>
-            <li><img src="css.png" alt="css"></li>
+            <li><img src="cpp.png" alt="c++" data-aos="zoom-in"></li>
+            <li><img src="cs.png" alt="c#" data-aos="zoom-in"></li>
+            <li><img src="py.png" alt="python" data-aos="zoom-in"></li>
+            <li><img src="js.png" alt="javascript" class="js" data-aos="zoom-in"></li>
+            <li><img src="lua.png" alt="lua" data-aos="zoom-in"></li>
+            <li><img src="html.png" alt="html" data-aos="zoom-in"></li>
+            <li><img src="css.png" alt="css" data-aos="zoom-in"></li>
         </ul>
-        <p class="title" id="pt">Notable Projects:</p>
+        <p class="title" id="pt" data-aos="fade-right">Notable Projects:</p>
         <ul id="projects">
-            <li><a href="https://astrogames06.github.io/"><img src="astrogames-l.png" alt="astrogames"></a></li>
-            <li><a href="https://cosmo-code.vercel.app/"><img src="cosmocode-l.png" alt="cosmocode"></a></li>
-            <li><a href="https://pico-coin-web.vercel.app/"><img src="picocoin-l.png" alt="picocoin"></a></li>
-            <li><a href="https://github.com/astrogames06/rlzero"><img src="raylibzero-l.png" alt="raylibzero"></a></li>
+            <li><a href="https://astrogames06.github.io/"><img src="astrogames-l.png" alt="astrogames" data-aos="zoom-in"></a></li>
+            <li><a href="https://cosmo-code.vercel.app/"><img src="cosmocode-l.png" alt="cosmocode" data-aos="zoom-in"></a></li>
+            <li><a href="https://pico-coin-web.vercel.app/"><img src="picocoin-l.png" alt="picocoin" data-aos="zoom-in"></a></li>
+            <li><a href="https://github.com/astrogames06/rlzero"><img src="raylibzero-l.png" alt="raylibzero" data-aos="zoom-in"></a></li>
             <li><a href="https://github.com/astrogames06/rayfunctions"><img src="rayfunctions-l.png"
-                        alt="rayfunctions"></a></li>
+                        alt="rayfunctions" data-aos="zoom-in"></a></li>
         </ul>
-        <p class="title">About Me:</p>
-        <p class="plain-text" id="am">My name is Jesse Sher, a 13-year-old from Australia passionate about programming.
+        <p class="title" data-aos="fade-right">About Me:</p>
+        <p class="plain-text" id="am" data-aos="fade-right">My name is Jesse Sher, a 13-year-old from Australia passionate about programming.
             With 3-4 years of experience, I've created numerous projects.</p>
 
         <a href="https://github.com/astrogames06"><img src="sm-btn.png" id="sm-btn" alt="see more"></a>
+        <a href="contact.html"><img src="contact.png" id="contact-btn" alt="contact"></a>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
