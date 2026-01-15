@@ -51,8 +51,10 @@
         const d = new Date();
         let year = Number(d.getFullYear());
         let am = document.getElementById('am');
+
+        const age = date => new Date(Date.now() - new Date(date)).getUTCFullYear() - 1970; // gets years since birthday
         
-        am.innerText = `My name is Jesse Sher, a 15-year-old from Australia passionate about programming.
+        am.innerText = `My name is Jesse Sher, a ${age("2010-07-08")}-year-old from Australia passionate about programming.
             With ${year-2021}-${year-2020} years of experience, I've created numerous projects.`
     </script>
 </body>
