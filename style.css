@@ -1,5 +1,6 @@
 @import url('lib/font.css');
 
+* { cursor: none !important; }
 body
 {
     background-color: black;
@@ -132,4 +133,17 @@ body
 {
     margin-top: -10px;
     width: 150px;
+}
+
+.mouse-hover
+{
+    font-size: 45px !important;
+    transition: font-size ease-in 0.2s;
+    text-shadow: 1px 1px 11px #00A3FF;
+}
+
+.mouse-out
+{
+    font-size: 40px !important;
+    transition: font-size ease-in 0.2s;
 }

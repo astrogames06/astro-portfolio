@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body style="cursor: none !important;">
     <a href="index.html">
         <img src="assets/corner-img.png" alt="corner-img" id="corner-img">
     </a>
@@ -44,10 +44,12 @@
         <a href="contact.html"><img src="assets/contact.png" id="contact-btn" alt="contact"></a>
     </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="cursor.js"></script>
+    <script src="lib/aos.js"></script>
     <script>
         AOS.init();
 
+        // Script to update text info
         const d = new Date();
         let year = Number(d.getFullYear());
         let am = document.getElementById('am');
